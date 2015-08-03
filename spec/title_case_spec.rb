@@ -11,7 +11,7 @@ describe('String#title') do
   end
 
   it("does not capitalize specific words i.e. for, nor, an, etc.") do
-    expect(("nor the and but an a or for").title_case()).to(eq("nor the and but an a or for"))
+    expect(("Nor the and but an a or for").title_case()).to(eq("Nor the and but an a or for"))
   end
 
   it("capitalizes the exceptions words if they are the first in the string") do

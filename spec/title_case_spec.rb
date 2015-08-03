@@ -26,4 +26,8 @@ describe('String#title') do
   it("Normalizes CrAzY TeXtXxX") do
     expect(("I rEaLlY lOvE oNiOns").title_case()).to(eq("I Really Love Onions"))
   end
+
+  it("ignores numbers") do
+    expect(("6 onions").title_case()).to(eq("6 Onions"))
+  end
 end

@@ -8,7 +8,7 @@ describe('String#title_case') do
   end
 
   it("capitalizes the first letter series of words") do
-    expect(("i like onions").title_case()).to(eq("I Like Onions"))
+    expect(("i like and ham").title_case()).to(eq("I Like and Ham"))
   end
 
   it("does not capitalize specific words i.e. for, nor, an, etc.") do
@@ -29,5 +29,9 @@ describe('String#title_case') do
 
   it("ignores numbers") do
     expect(("6 onions").title_case()).to(eq("6 Onions"))
+  end
+
+  it("capitalizes the first letter series of words") do
+    expect(("green eggs and ham").title_case()).to(eq("Green Eggs and Ham"))
   end
 end
